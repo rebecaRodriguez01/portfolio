@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #10002b;
+  --color-2: #240046;
+  --color-3: #3c096c;
+  --color-4: #5a189a;
+  --color-5: #7b2cbf;
+  --color-6: #9d4edd;
+  --color-7: #c77dff;
+  --color-8: #e0aaff;
+  --text-color: #f1f1f1;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+
+  background: radial-gradient(circle at 85% 40%,
+      /* 🔥 foco hacia la derecha */
+      var(--color-7) 0%,
+      var(--color-5) 30%,
+      var(--color-3) 60%,
+      var(--color-1) 100%);
+  min-height: 100vh;
+}
+
+/* TIPOGRAFÍA */
+h1,
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-8);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+
+p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* SECCIONES */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 60px 40px;
+
+  background: linear-gradient(135deg,
+      rgba(224, 170, 255, 0.15),
+      /* color-8 suave */
+      rgba(157, 78, 221, 0.12)
+      /* color-6 suave */
+    );
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  /* 🔥 sombra más suave */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.section-with-avatar {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 80px auto;
+
+  /* fondo suave opcional */
+  background: rgba(224, 170, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Secciones donde tengo avatar*/
+.section-avatar {
+  animation: fadeInRight 1s ease forwards;
+  flex: 0 0 auto;
+}
+
+.section-avatar img {
+  width: 180px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .section-with-avatar {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .section-avatar img {
+    width: 80px;
+
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+.section-text {
+  flex: 1;
+}
+
+/* ESTADO INICIAL (oculto) */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* CUANDO SE ACTIVA */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

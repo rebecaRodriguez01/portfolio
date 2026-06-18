@@ -1,0 +1,104 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  /* padding: 20px; */
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav a {
+  color: var(--color-7);
+  margin-right: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: var(--color-8);
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+
+/* HAMBURGUESA OCULTA EN DESKTOP */
+.hamburger {
+  display: none;
+}
+
+/* Responsive  */
+/* @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  } */
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 17px;
+  }
+
+  /* MOSTRAR HAMBURGUESA */
+  .hamburger {
+    display: block;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  /* OCULTAR MENÚ */
+  .nav-links {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 20px;
+    width: 100%;
+    background: rgba(36, 0, 70, 0.98);
+    flex-direction: column;
+    padding: 10px 5%;
+    display: none;
+  }
+
+  /* letras mas peques */
+  .nav-links li a {
+    font-size: 12px;
+  }
+
+
+  /* MOSTRAR CUANDO ESTÁ ACTIVO */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
