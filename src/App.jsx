@@ -20,9 +20,7 @@ function App() {
   };
 
   // 🔥 aplicar tema al cargar
-  useEffect(() => {
-    document.body.className = theme;
-  }, []);
+
   useEffect(() => {
   
     const elements = document.querySelectorAll(".fade-in");
