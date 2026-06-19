@@ -1,11 +1,7 @@
 import "../styles/Skills.css";
 import avatarOrdenador from "../assets/avatarOrdenador.png";
 
-import backendIcon from "../assets/backendIcon.png";
-import frontIcon from "../assets/backendIcon.png";
-
 import javaIcon from "../assets/javaIcon.png";
-import Spring_BootIcon from "../assets/Spring_BootIcon.png";
 import nestIcon from "../assets/nestIcon.png";
 
 import reactIcon from "../assets/React-icon.png";
@@ -49,20 +45,20 @@ function Skills() {
 
           <div className="skill-card">
             <div className="skill-icon">
+              <img src={viteIcon} alt="Icono de Vite" />
+            </div>
+            <span className="skill-name">Vite</span>
+           
+          </div>
+
+          <div className="skill-card">
+            <div className="skill-icon">
               <img src={postgreIcon} alt="Icono de Postgre" />
             </div>
             <span className="skill-name">PostgreSQL</span>
             <div className="skill-bar">
              
             </div>
-          </div>
-
-          <div className="skill-card">
-            <div className="skill-icon">
-              <img src={viteIcon} alt="Icono de Vite" />
-            </div>
-            <span className="skill-name">Vite</span>
-           
           </div>
         </div>
       </div>

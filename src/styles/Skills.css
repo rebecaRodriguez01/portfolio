@@ -83,21 +83,6 @@
     margin-bottom: 10px;
   }
   
-  /* Barra de progreso */
-  .skill-bar {
-    background: rgba(157, 78, 221, 0.2);
-    width: 100%;
-    height: 12px;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .skill-progress {
-    height: 100%;
-    border-radius: 12px 0 0 12px;
-    transition: width 1s ease;
-  }
-  
   /* Responsivo: avatar encima del texto en móviles */
   @media (max-width: 768px) {
     .skills-grid {
