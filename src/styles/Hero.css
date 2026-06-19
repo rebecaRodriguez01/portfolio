@@ -35,6 +35,12 @@ section#hero {
   border-radius: 80px;
 }
 
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -60,5 +66,15 @@ section#hero {
   .hero-image img {
     width: 120px;
   }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
 
 }

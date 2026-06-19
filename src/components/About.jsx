@@ -10,12 +10,15 @@ function About() {
       <div className="section-text">
         <h2>Sobre mí</h2>
         <p>
-          Soy ingeniera informática con experiencia en desarrollo backend,
-          especializada en Java. Actualmente estoy enfocada en reforzar mis
-          habilidades en desarrollo web y arquitectura de software, construyendo
-          proyectos propios mientras busco mi primera oportunidad en el sector.
-          Me interesa crear soluciones escalables y bien estructuradas,
-          aplicando buenas prácticas de arquitectura de software.
+          Ingeniera informática con experiencia en desarrollo backend utilizando
+          Java, trabajando con APIs REST, bases de datos PostgreSQL y
+          arquitecturas por capas. Actualmente estoy reforzando mis habilidades
+          en desarrollo frontend con React y profundizando en arquitectura de
+          software, construyendo proyectos propios para consolidar conocimientos
+          y buenas prácticas de desarrollo. Busco mi primera oportunidad
+          profesional como desarrolladora backend o software engineer junior,
+          donde aportar una base técnica sólida y seguir creciendo en entornos
+          de desarrollo reales.
         </p>
       </div>
     </section>

@@ -1,12 +1,13 @@
 import "../styles/Navbar.css";
 import { useState } from "react";
+import { scrollToSection } from "../utils/scrollToSection";
 
-function scrollToSection(id) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-}
+// function scrollToSection(id) {
+//   const element = document.getElementById(id);
+//   if (element) {
+//     element.scrollIntoView({ behavior: "smooth" });
+//   }
+// }
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
