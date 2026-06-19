@@ -62,7 +62,21 @@
   .skill-icon {
     margin-bottom: 10px;
   }
+
+  .tech-icon {
+    display: flex;
+    align-items: center;
+    
+    gap: 8px;
+    margin-top: 8px;
+  }
   
+  .tech-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
   /* Nombre de skill */
   .skill-name {
     font-weight: 500;
