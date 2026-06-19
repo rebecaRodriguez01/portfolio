@@ -34,9 +34,9 @@ Portfolio personal desarrollado con **React**, donde muestro mis proyectos, habi
 
 ## 📫 Contacto
 
-- GitHub: https://github.com/TU-USUARIO  
-- LinkedIn: https://linkedin.com/in/TU-PERFIL  
-- Email: TU_EMAIL
+- GitHub: https://github.com/rebecaRodriguez01
+- LinkedIn: https://www.linkedin.com/in/rebecarodriguezd
+- Email: rebrodriguezd@gmail.com
 
 ---
 
